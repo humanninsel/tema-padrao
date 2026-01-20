@@ -1,0 +1,22 @@
+footer{
+  padding: 45px 0;
+  color: #863F19;
+  p{
+    margin: 0;
+  }
+  hr{
+    opacity: 1;
+    border-top: 2px solid;
+    margin: 51px 15px 41px;
+  }
+  a{
+    color: #863F19;
+    &:hover{
+      color: #863F19;
+      text-decoration: underline !important;
+    }
+  }
+  @media (max-width: map-get($grid-breakpoints, lg )) {
+    
+  }
+}

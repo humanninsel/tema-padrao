@@ -1,0 +1,131 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1250px,
+  xxl: 1600px,
+);
+// @font-face {
+//   font-family: 'Greycliff';
+//   src: url('../fonts/GreycliffCFBold.woff2') format('woff2'),
+//       url('../fonts/GreycliffCFBold.woff') format('woff');
+//   font-weight: bold;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+
+// @font-face {
+//   font-family: 'Greycliff';
+//   src: url('../fonts/GreycliffCFRegular.woff2') format('woff2'),
+//       url('../fonts/GreycliffCFRegular.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+
+// @font-face {
+//   font-family: 'Greycliff';
+//   src: url('../fonts/GreycliffCFExtraLightRegular.woff2') format('woff2'),
+//       url('../fonts/GreycliffCFExtraLightRegular.woff') format('woff');
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+@import "animate";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+body {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  background-color: #EFE8E1;
+  color: #707070;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none !important;
+}
+.btn-cta {  
+  background-color: rgba($color: #86401e, $alpha: .91);
+  display: inline-block;
+  padding: 0 14px;
+  width: fit-content;
+  border-radius: 54px;
+  color: #EFE8E1;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 35px;
+  position: relative;
+  border: 1px solid #fff;
+  z-index: 2;
+  transition: all .3s ease-in-out;
+  &:hover{
+    background-color: rgba($color: #86401e, $alpha: 1);
+    color: #EFE8E1;
+  }
+}
+.tns-controls{
+  text-align: center;
+  button{
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 0;
+    svg{
+      text-shadow: 0px 0px 20px black;
+      transform: scale(1.5);
+      box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1);
+      background-color: rgba(0, 0, 0, .1);
+    }
+    &:nth-child(1){
+      margin-right: 24px;
+    }
+    &:disabled{
+      opacity: .8;
+    }
+  }
+}
+.tns-nav{
+  text-align: center;
+  margin-top: 25px;
+  button{
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 1px solid #0F0F0F;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0 10px;
+    &:nth-child(1){
+      margin-left: 0;
+    }
+    &:nth-last-child(1){
+      margin-right: 0;
+    }
+    &.tns-nav-active{
+      border: #0F0F0F;
+      background-color: #F2A51A;
+    }
+  }
+}
+.lb-dataContainer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 15px;
+  padding-right: 15px;
+  z-index: 10;
+}
+@import "footer", "header", "home";

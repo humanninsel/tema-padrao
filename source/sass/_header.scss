@@ -1,0 +1,23 @@
+header{
+  position: sticky;
+  top: 0;
+  z-index: 999999999999;
+  color: #863F19;
+  font-weight: bold;
+  background-color: #EFE8E1;
+  .navbar{
+    .navbar-nav{
+      .nav-item{
+        .nav-link{
+          color: #863F19;
+          &:hover{
+            color: #863F19;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: map-get($grid-breakpoints, lg )) {
+  
+  }
+}

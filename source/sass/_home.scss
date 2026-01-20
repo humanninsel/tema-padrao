@@ -1,0 +1,80 @@
+.banner-home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1{
+    position: absolute;
+    margin: auto;
+    z-index: 3;
+    text-shadow: 0px 0px 20px black;
+    color: #EFE8E1;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .slide-home{
+    height: 80vh;
+    background: center center no-repeat;
+    background-size: cover;
+  }
+  .tns-controls{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+  }
+  @media (min-width: map-get($grid-breakpoints, lg )) {
+    h1{
+      position: absolute;
+      margin: auto;
+      z-index: 3;
+      text-shadow: 0px 0px 20px black;
+      color: #EFE8E1;
+      font-size: 82px;
+      line-height: 87.5px;
+      font-weight: 500;
+    }
+  }
+}
+
+.depoimentos{
+  padding: 60px 0;
+  .carrosel-depoimentos{
+    .item{
+      margin: 25px 0;
+      background-color: rgba($color: #E4DDDD, $alpha: .25);
+      &:nth-child(2n){
+      background-color: rgba($color: #C1C1C1, $alpha: .25);
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+      }
+      .conteudo{
+        padding: 80px 25px;
+        color: #707070;
+        text-align: center;
+        
+        .mensagem{
+          margin-bottom: 29px;
+          font-size: 16px;
+        }
+        .imagem{
+          margin-bottom: 16px;
+          img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+          }
+        }
+        .autor{
+          h3{
+            font-weight: bold;
+            font-size: 14px;
+          }
+          h4{
+            font-size: 10px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
