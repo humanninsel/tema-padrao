@@ -34,8 +34,7 @@ var browserSync = require("browser-sync").create();
 
 gulp.task("browser-sync", function () {
   browserSync.init({
-    proxy: "localhost/ipms/",
-    browser: "chrome"
+    proxy: "localhost/baronconstrutora/",
   });
 });
 
